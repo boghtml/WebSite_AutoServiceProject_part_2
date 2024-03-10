@@ -366,34 +366,32 @@ footer {
   }
   
 /*Про нас */
-.about-intro {
+.about-us {
     position: relative;
-    text-align: center; /* Центрування тексту */
-    color: white; /* Білий колір тексту */
-  }
-  
-  .background-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    color: white;
     background-size: cover;
     background-position: center;
-    opacity: 0.5; /* Додаємо прозорість для затемнення зображення */
-    z-index: -1; /* Забезпечуємо, що фон буде під текстом */
-  }
-  
-  .intro-image img {
-    max-width: 100%;
-    height: auto;
-    margin: 20px 0; /* Відступ зверху і знизу для вступної картинки */
-  }
-  
-  .about-text {
-    background: rgba(0, 0, 0, 0.7); /* Затемнений фон для кращої читабельності тексту */
-    display: inline-block;
-    margin: 20px; /* Відступ для тексту */
-    padding: 20px; /* Внутрішні відступи */
-  }
+    padding: 50px 0; /* Відступи зверху та знизу */
+}
+
+.about-intro {
+    max-width: 600px; /* Максимальна ширина картинки */
+    margin: 0 auto; /* Центрування картинки */
+    padding: 20px;
+}
+
+.about-intro img {
+    width: 100%; /* Зробити картинку адаптивною */
+    height: auto; /* Зберегти пропорції */
+    display: block;
+    margin-bottom: 30px; /* Відступ знизу картинки */
+}
+
+.about-details {
+    background: rgba(0, 0, 0, 0.7); /* Полупрозорий чорний фон для тексту */
+    padding: 30px;
+    margin-top: -30px; /* Ефект нашарування на картинку */
+}
+
+
   
