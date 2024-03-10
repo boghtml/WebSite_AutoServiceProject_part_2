@@ -1,0 +1,207 @@
+/* Hero block */
+.hero {
+    min-height: 85vh;
+    display: flex;
+    background-image: url('../images/backroundImage1.webp');
+    background-size: cover;
+    background-position: center;
+    background-color: var(--primary-color);
+}
+
+.hero__container {
+    display: flex;
+}
+
+.hero__banner {
+    max-width: 100%;
+    margin-left: auto;
+}
+
+.hero__image {
+    min-width: 100%;
+    position: relative;
+    top: 15rem;
+}
+
+.hero__subtitle, .hero__title {
+    color: var(--text-color-accent);
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    .hero__container {
+        flex-direction: column;
+    }
+    .hero__image {
+        max-width: auto;
+        top: 2rem;
+        right: 16px;
+    }
+
+    .hero__title {
+        margin-bottom: 4rem;
+    }
+    .hero__banner{
+        margin-left: 0;
+        margin-top: 3rem;
+    }
+}
+
+/* SEVICES OVERVIEW*/
+
+.services-overview {
+    margin-top: 5rem;
+}
+
+.services-overview__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-overview__column {
+    margin-top: 8rem;
+    margin-bottom: 3rem;
+    margin-left: .7rem;
+}
+
+.services-overview__column--image {
+    display: flex;
+}
+
+.services-overview__heading {
+    color: var(--secondary-color);
+    margin-bottom: 0;
+}
+
+.services-overview__heading::before {
+    content: "Перегляньте";
+    position: relative;
+    bottom: 1.5rem;
+    left: .125rem;
+    display: block;
+    width: 100%;
+    height: 1px;
+    font-size: 1rem;
+    color: var(--text-color);
+    text-transform: uppercase;
+}
+
+.services-overview__item {
+    display: flex;
+    align-items: center;
+}
+
+.services-overview__image {
+    max-width: 20rem;
+    height: auto;
+    margin-right: 2rem;
+}
+
+.services-overview__icon {
+    max-width: 1.5rem;
+    margin-right: 1rem;
+}
+    .services-overview,
+    .services-overview__item,
+    .services-overview__btn {
+        margin-top: 1.5rem;
+    }
+
+@media (max-width: 768px) {.services-overview,
+    .services-overview__item,
+    .services-overview__btn,
+    .services-overview__column {
+        margin: 0;
+        margin-top: 1.5rem;
+    }
+    
+    .services-overview__container {
+        flex-direction: column-reverse;
+    }
+    
+    .services-overview__column--image {
+        flex-direction: column;
+    }
+    
+    .services-overview__image {
+        max-width: 100%;
+        margin: 1rem 0;
+    }
+}
+
+
+/* PARALAX SECTION*/
+
+.parallax-section__main {
+    position: relative;
+    display: flex;
+    background-image: url('../images/ParalaxPicture.webp');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30rem;
+}
+
+.parallax-section__heading {
+    color: var(--secondary-color);
+}
+
+.parallax-section__text {
+    color: var(--text-color-accent);
+    margin-bottom: 1rem;
+}
+
+.parallax-section__link {
+    margin-top: 2rem;;
+}
+
+@media (max-width: 768px) {
+    .parallax-section__main {
+        height: 56rem
+    }
+}
+
+
+/* TESTOMONIALS */
+
+.testimonials-section__container {
+    text-align: center;
+}
+
+.testimonials-section {
+    background: url('../images/dirtyWall.webp') no-repeat center center/cover;
+    padding: 2.5rem 0;
+}
+
+.testimonials-section__heading {
+    color: var(--text-color-accent);
+}
+
+.testimonials-section__testimonial {
+    margin: 1.2rem;
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+    background: var(--text-transparent-color);
+    padding: .625rem;
+}
+
+.testimonials-section__quote {
+    font-style: italic;
+    color: var(--background-color);
+    padding: 0 .625rem;
+}
+
+.testimonials-section__author {
+    font-weight: bold;
+    color: var(--secondary-color);
+    margin-top: .625rem;
+}
+
+@media (max-width: 768px) {
+    .testimonials-section__testimonial {
+        width: 100%;
+        margin: .625rem 0;
+    }
+}

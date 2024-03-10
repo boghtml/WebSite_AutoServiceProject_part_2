@@ -1,0 +1,111 @@
+main {
+    margin-top: 3rem;;
+}
+
+.services-intro {
+    position: relative;
+    color: var(--background-color);
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url('../images/empty-concrete-texture.webp');
+}
+
+.services-intro__content {
+    height: 15rem;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    max-width: 50rem;
+    margin: 0 auto;
+    background: var(--text-transparent-color);
+    padding: 2.5rem 0;
+}
+
+.services-intro__title {
+    color: var(--secondary-color);
+    margin-bottom: 1.2rem;
+}
+
+.services-intro__heading {
+    color: var(--secondary-color);
+    margin-top: 1rem;
+}
+
+.services-intro__heading,
+.services-intro__subheading {
+    text-align: left;
+}
+
+.services-intro__image {
+    width: 100%;
+    height: auto;
+}
+
+.services-pricing {
+    text-align: center;
+    padding: 3rem 0;
+    background: var(--background-color);
+}
+
+.services-pricing__table, .booking-button__container {
+    width: 100%;
+    max-width: 48rem;
+    margin-top: 1.25rem;
+} 
+
+.booking-button__container {
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto;
+}
+
+.services-pricing__table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.25rem;
+    border-collapse: collapse;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.services-pricing__table th,
+.services-pricing__table td {
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    text-align: left;
+}
+
+.services-pricing__table th {
+    background: var(--primary-color);
+    color: var(--text-color-accent);
+}
+
+.services-pricing__table tr:hover {
+    background-color: var(--table-header-color);
+}
+
+.services-pricing__table td:first-child {
+    width: 70%;
+}
+
+.services-pricing__table td:last-child {
+    width: 30%;
+}
+
+@media (max-width: 768px) {
+    .services-intro__heading,
+    .services-intro__subheading {
+        margin: 1rem;
+        margin-bottom: 2rem;
+        font-size: 3rem;
+    }
+
+    .services-intro__content {
+        padding: 4rem 0;
+        height: 18rem;
+    }
+    
+    .services-overview__image {
+        max-width: 100%;
+        height: auto;
+    }
+}

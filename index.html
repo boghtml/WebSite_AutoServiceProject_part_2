@@ -3,145 +3,192 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Авто Сервіс</title>
-    
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description"
+        content="Auto Service - Професійний ремонт та обслуговування автомобілів у місті Хмельницький. Записуйтесь на огляд.">
+    <title>Авто Сервіс - Ремонт і обслуговування автомобілів у Хмельницькому</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/home.css">
 </head>
+
 <body>
-    <header>
-        <div class="logo-container">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="Pictures/LogoImage.png" alt="Авто Сервіс">
-                </a>
-            </div>
-            <div class="logo-text">
-                <h1>Auto Service</h1>
-            </div>
-        </div>
+    <div class="wrapper">
+        <header class="header">
+            <section class="header__container">
+                    <div class="header__logo">
+                        <a href="index.html" aria-label="Перейти на головну сторінку">
+                            <img src="assets/images/LogoImage.webp" alt="Логотип Авто Сервісу">
+                        </a>
+                        <div class="header__title">Auto Service</div>
+                </div>
 
-        <div class="menu-social-container">
-            
-            <nav>
-                <ul>
-                    <li><a href="index.html" class="active">Головна</a></li>
-                    <li><a href="about.html">Про нас</a></li>
-                    <li><a href="services.html">Послуги</a></li>
-                    <li><a href="booking.html">Записатись</a></li>
-                    <li><a href="contacts.html">Контакти</a></li>
-                </ul>
-            </nav> 
-    
-            <div class="social-icons">
-                
-                <div class="social-icons">
-                    <a href="https://www.instagram.com/andrey_rybak1/" target="_blank"> <img src="Pictures/instagram.png" alt="Instagram"></a>
-                    <a href="https://www.tiktok.com/@userl66snows7n/" target="_blank"> <img src="Pictures/tiktok.png" alt="tiktok"></a>   
-                </div> 
-            </div> 
-        </div>     
+                <div class="header__nav">
+                    <nav  class="nav" aria-label="Головна навігація">
+                        <input type="checkbox" id="toggle" class="input-toggler">
+                        <label for="toggle" class="menu-toggler">
+                            <span class="menu-toggler-line"></span>
+                            <span class="menu-toggler-line"></span>
+                            <span class="menu-toggler-line"></span>
+                        </label>
+                        
+                        <ul id="menu" class="nav__list">
+                            <li class="nav__item"><a href="index.html" aria-current="page" class="nav__link nav__link--active">Головна</a></li>
+                            <li class="nav__item"><a href="about.html" class="nav__link">Про нас</a></li>
+                            <li class="nav__item"><a href="services.html" class="nav__link">Послуги</a></li>
+                            <li class="nav__item"><a href="booking.html" class="nav__link">Записатись</a></li>
+                            <li class="nav__item"><a href="#contacts" class="nav__link">Контакти</a></li>
+
+                            <li class="nav__item">
+                                <div class="social-icons" aria-label="Соціальні мережі">
+                                    <a href="https://www.instagram.com/andrey_rybak1/" target="_blank" aria-label="Instagram"
+                                        class="social-icons__link">
+                                        <svg aria-hidden="true" focusable="false" role="img" class="social-icons__icon" fill="#fff"
+                                            xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 551.034 551.034"
+                                            style="enable-background:new 0 0 000.000 000.000;" xml:space="preserve">
+                                            <path class="logo" fill="#fff"
+                                                d="M386.878,0H164.156C73.64,0,0,73.64,0,164.156v222.722 c0,90.516,73.64,164.156,164.156,164.156h222.722c90.516,0,164.156-73.64,164.156-164.156V164.156 C551.033,73.64,477.393,0,386.878,0z M495.6,386.878c0,60.045-48.677,108.722-108.722,108.722H164.156 c-60.045,0-108.722-48.677-108.722-108.722V164.156c0-60.046,48.677-108.722,108.722-108.722h222.722 c60.045,0,108.722,48.676,108.722,108.722L495.6,386.878L495.6,386.878z" />
+
+                                            <path fill="#fff"
+                                                d="M275.517,133C196.933,133,133,196.933,133,275.516 s63.933,142.517,142.517,142.517S418.034,354.1,418.034,275.516S354.101,133,275.517,133z M275.517,362.6 c-48.095,0-87.083-38.988-87.083-87.083s38.989-87.083,87.083-87.083c48.095,0,87.083,38.988,87.083,87.083 C362.6,323.611,323.611,362.6,275.517,362.6z" />
+
+                                            <circle fill="#fff" cx="418.306" cy="134.072" r="34.149" />
+                                        </svg>
+                                    </a>
+                                    <a href="https://www.tiktok.com/@userl66snows7n/" target="_blank" aria-label="TikTok" class="social-icons__link">
+                                        <svg aria-hidden="true" focusable="false" role="img" class="social-icons__icon" fill="#fff" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50">
+                                            <path
+                                                d="M41,4H9C6.243,4,4,6.243,4,9v32c0,2.757,2.243,5,5,5h32c2.757,0,5-2.243,5-5V9C46,6.243,43.757,4,41,4z M37.006,22.323 c-0.227,0.021-0.457,0.035-0.69,0.035c-2.623,0-4.928-1.349-6.269-3.388c0,5.349,0,11.435,0,11.537c0,4.709-3.818,8.527-8.527,8.527 s-8.527-3.818-8.527-8.527s3.818-8.527,8.527-8.527c0.178,0,0.352,0.016,0.527,0.027v4.202c-0.175-0.021-0.347-0.053-0.527-0.053 c-2.404,0-4.352,1.948-4.352,4.352s1.948,4.352,4.352,4.352s4.527-1.894,4.527-4.298c0-0.095,0.042-19.594,0.042-19.594h4.016 c0.378,3.591,3.277,6.425,6.901,6.685V22.323z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+        </header>
         
-    </header>
-    
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Ласкаво просимо</h1>
-            <p>Auto Service - Обслуговування та ремонт автомобілів у вашому місті</p>
-            <a href="services.html" class="btn">Записатись</a>
-        </div>
-        <div class="hero-image">
-            <img src="Pictures/MainCar.gif" alt="Анімоване зображення">
-          </div>
-    </section>
-  
-    <section class="services-overview">
-        <div class="services-column image-column">
-          <!-- Місце для фото 1 -->
-          <img src="Pictures/photoSrvices1.jpg" alt="Фото 1">
-        </div>
-        <div class="services-column image-column">
-          <!-- Місце для фото 2 -->
-          <img src="Pictures/photoSrvices2.jpg" alt="Фото 2">
-        </div>
-        <div class="services-column text-column">
-          <h2>Наші послуги</h2>
-          <p>Це абзац. Просто натисніть, щоб додати та змінити контент.</p>
-          <ul class="services-list">
-            <li><img src="Pictures/oil-filter.png" alt="Icon 1">Заміна масла та фільтрів</li>
-            <li><img src="Pictures/racing.png" alt="Icon 2">Монтаж і балансування шин</li>
-            <li><img src="Pictures/repair.png" alt="Icon 3">Повний тюнінг</li>
-          </ul>
-          
-          <a href="services.html" class="btn">Усі послуги</a>
-        </div>
-    </section>
-    
-    <section class="parallax-section">
-        <div class="parallax-content">
-          <h2>Сертифіковані та якісні запчастини</h2>
-          <p>У нас ви знайдете лише найкращі запчастини, які пройшли сертифікацію та гарантують вам найвищу якість. Ми пишаємося тим, що пропонуємо тільки продукцію від найвідоміших виробників, які вже завоювали довіру клієнтів по всьому світу.</p>
-          <p>Наша компанія прагне забезпечити надійність і довговічність усіх наших запчастин. Ми розуміємо, наскільки важливо мати автомобіль, який завжди готовий до подорожей, тому ми ставимо безпеку і надійність на передній план.</p>
-          <p>Не компромітуйте якість. Оберіть наші сертифіковані запчастини для вашого транспортного засобу, і ви отримаєте гарантію найвищого стандарту якості та надійності.</p>
-          <!-- Тут додаємо кнопку -->
-          <a href="about.html" class="btn more-info-btn">Дізнатися більше</a>
-        </div>
-    </section>
-      
-      
-      <!-- Наступний section -->
-    <section class="testimonials-section">
-        <div class="container">
-          <h2>Відгуки наших клієнтів</h2>
-          <div class="testimonial">
-            <blockquote>"Звернувся до Auto Service з проблемою шуму в двигуні. Фахівці швидко знайшли причину та усунули її. Я вражений їх професіоналізмом та чіткістю роботи. Мій автомобіль тепер працює як новий. Вдячний за якісний сервіс!"</blockquote>
-            <p class="author">Ігор Петренко</p>
-          </div>
-          <div class="testimonial">
-            <blockquote>"Дякую Auto Service за чудову роботу! Ви врятували моє авто після серйозної аварії. Всі ремонти були зроблені швидко та ефективно, а ціни були більш ніж справедливі. Рекомендую всім хто шукає надійний автосервіс."</blockquote>
-            <p class="author">Олена Василівна</p>
-          </div>
-          <div class="testimonial">
-            <blockquote>"Я постійний клієнт Auto Service вже більше 5 років і завжди залишаюсь задоволеним. Вони допомогли мені підібрати найкращі запчастини для тюнінгу мого мотоцикла, і результат перевершив всі мої очікування. Спасибі за вашу працю і відданість!"</blockquote>
-            <p class="author">Олексій Мірошниченко</p>
-          </div>
-        </div>
-    </section>
-      
-    <footer>
-        <div class="footer-section">
-            <h3>Графік роботи</h3>
-            <p>Пн — Пт: 9:00 — 18:00</p>
-            <p>Сб: 9:00 — 16:00</p>
-            <p>Нд: вихідний</p>
-        </div>
-        <div class="footer-section">
-            <h3>Інформація</h3>
-            <p>Телефон: +38 096 2813 659</p>
-            <p>Ел. адреса: boghtml@gmail.com</p>
-        </div>
-        <div class="footer-section">
-            <h3>Розташування</h3>
-            <p>вул. Горбанчука, 3</p>
-            <p>м. Хмельницький, 01001, Україна</p>
-        </div>
-        <div class="footer-section call-to-action">
-            <h3>Скільки коштує?</h3>
-            <button>Заповніть форму</button>
-        </div>
-
-        <div class="map">
+        <main role="main" aria-label="main content">
+            <section class="hero">
+                <div class="hero__container">
+                    <article class="hero__banner">
+                        <h3 class="hero__subtitle">Ласкаво просимо</h3>
+                        <h1 class="hero__title">Обслуговування та ремонт автомобілів у вашому місті</h1>
+                        <a href="services.html" class="hero__button btn">Записатись</a>
+                    </article>
+                    <figure class="hero__figure">
+                        <img src="assets/images/MainCar.gif" alt="Анімоване зображення автомобіля на сервісній станції" class="hero__image">
+                    </figure>
+                </div>
+            </section>
+        
+            <section class="services-overview">
+                <div class="services-overview__container">
+                    <div class="services-overview__column services-overview__column--image">
+                        <img src="assets/images/photoSrvices1.webp" alt="Детальный вид сервисного обслуживания автомобиля"
+                        class="services-overview__image">
+                        <img src="assets/images/photoSrvices2.webp" alt="Специалисты выполняют ремонт автомобиля"
+                            class="services-overview__image">
+                    </div>
+                    <div class="services-overview__column services-overview__column--text">
+                        <h2 class="services-overview__heading">Наші послуги</h2>
+                        <ul class="services-overview__list">
+                            <li class="services-overview__item">
+                                <img src="assets/images/oil-filter.webp" alt="Заміна масла та фільтрів иконка"
+                                    class="services-overview__icon"><h3>Заміна масла та фільтрів</h3>
+                            </li>
+                            <li class="services-overview__item">
+                                <img src="assets/images/racing.webp" alt="Монтаж і балансування шин иконка"
+                                    class="services-overview__icon"><h3>Монтаж і балансування шин</h3>
+                            </li>
+                            <li class="services-overview__item">
+                                <img src="assets/images/repair.webp" alt="Повний тюнінг иконка" class="services-overview__icon">
+                                <h3>Повний тюнінг</h3>
+                            </li>
+                        </ul>
+                        <a href="services.html" class="services-overview__btn btn">Усі послуги</a>
+                    </div>
+                </div>
+            </section>
             
-    </div>
+            <section class="parallax-section__main" aria-labelledby="certified-parts-title">
+                <div class="parallax-section__container">
+                    <h2 class="parallax-section__heading">Сертифіковані та якісні запчастини</h2>
+                    <p class="parallax-section__text">У нас ви знайдете лише найкращі запчастини, які пройшли сертифікацію та гарантують вам
+                        найвищу якість. Ми пишаємося тим, що пропонуємо тільки продукцію від найвідоміших виробників, які вже завоювали
+                        довіру клієнтів по всьому світу.</p>
+                    <p class="parallax-section__text">Наша компанія прагне забезпечити надійність і довговічність усіх наших запчастин. Ми
+                        розуміємо, наскільки важливо мати автомобіль, який завжди готовий до подорожей, тому ми ставимо безпеку і надійність
+                        на передній план.</p>
+                    <p class="parallax-section__text">Не компромітуйте якість. Оберіть наші сертифіковані запчастини для вашого
+                        транспортного засобу, і ви отримаєте гарантію найвищого стандарту якості та надійності.</p>
+
+                    <a href="about.html" class="parallax-section__link btn">Дізнатися більше</a>
+                </div>
+            </section>
     
-    <div class="footer-bottom">
-        <a href="#">Умови та положення</a>
-        <a href="#">Політика щодо файлів cookie</a>
-        <a href="#">Політика конфіденційності</a>
-        <p>© 2024 Авто Сервіс</p>
-    </div>
+            <section class="testimonials-section" aria-labelledby="testimonials-heading">
+                <div class="testimonials-section__container">
+                    <h2 class="testimonials-section__heading">Відгуки наших клієнтів</h2>
+                    <div class="testimonials-section__testimonial">
+                        <blockquote class="testimonials-section__quote">"Звернувся до Auto Service з проблемою шуму в двигуні.
+                            Фахівці швидко знайшли причину та усунули її. Я вражений їх професіоналізмом та чіткістю роботи. Мій
+                            автомобіль тепер працює як новий. Вдячний за якісний сервіс!"</blockquote>
+                        <p class="testimonials-section__author">Ігор Петренко</p>
+                    </div>
+                    <div class="testimonials-section__testimonial">
+                        <blockquote class="testimonials-section__quote">"Дякую Auto Service за чудову роботу! Ви врятували моє авто
+                            після серйозної аварії. Всі ремонти були зроблені швидко та ефективно, а ціни були більш ніж
+                            справедливі. Рекомендую всім хто шукає надійний автосервіс."</blockquote>
+                        <p class="testimonials-section__author">Олена Василівна</p>
+                    </div>
+                    <div class="testimonials-section__testimonial">
+                        <blockquote class="testimonials-section__quote">"Я постійний клієнт Auto Service вже більше 5 років і завжди
+                            залишаюсь задоволеним. Вони допомогли мені підібрати найкращі запчастини для тюнінгу мого мотоцикла, і
+                            результат перевершив всі мої очікування. Спасибі за вашу працю і відданість!"</blockquote>
+                        <p class="testimonials-section__author">Олексій Мірошниченко</p>
+                    </div>
+                </div>
+            </section>
 
-    </footer>
+            <section class="contacts contacts__container">
+                <h2 class="contacts__headings">Контакти</h2>
+                <div id="contacts" class="contacts__table" aria-labelledby="contacts__heading" role="region">
+                    <div class="contacts__section">
+                        <h3 class="contacts__title">Графік роботи</h3>
+                        <p class="contacts__text"><b>Пн — Пт:</b> <span>9:00 — 18:00</span></p>
+                        <p class="contacts__text"><b>Сб:</b> <span>9:00 — 16:00</span></p>
+                        <p class="contacts__text"><b>Нд:</b> <span>вихідний</span></p>
+                    </div>
+                    <div class="contacts__section">
+                        <h3 class="contacts__title"><b>Інформація</b></h3>
+                        <p class="contacts__text"><b>Телефон:</b> <a href="tel:+380962813659" class="contacts__link">+38
+                                096 2813 659</a></p>
+                        <p class="contacts__text"><b>Ел. адреса:</b> <a href="mailto:boghtml@gmail.com"
+                                class="contacts__link">boghtml@gmail.com</a></p>
+                    </div>
+                    <div class="contacts__section">
+                        <h3 class="contacts__title">Розташування</h3>
+                        <p class="contacts__text">вул. Горбанчука, 3</p>
+                        <p class="contacts__text">м. Хмельницький, 01001, Україна</p>
+                    </div>
+                    <div class="contacts__section contacts__section--cta">
+                        <span class="contacts__title contacts__title--cta">Скільки коштує?</span>
+                        <a href="booking.html" class="btn call-to-action-btn btn--sm">Заповніть форму</a>
+                    </div>
+                </div>
+            </section>
+        </main>
 
-
+        <footer class="footer">
+            <div class="footer__privacy">
+                <a href="#" class="footer__link">Умови та положення</a>
+                <a href="#" class="footer__link">Політика щодо файлів cookie</a>
+                <a href="#" class="footer__link">Політика конфіденційності</a>
+                <span class="footer__copyright">&copy; 2024 Авто Сервіс</span>
+            </div>
+        </footer>
+    </div>    
 </body>
 </html>

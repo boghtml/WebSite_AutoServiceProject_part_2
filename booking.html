@@ -1,126 +1,160 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сервіс послуг для автомобілів</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description"
+        content="Auto Service - Професійний ремонт та обслуговування автомобілів у місті Хмельницький. Записуйтесь на огляд.">
+    <title>Авто Сервіс - Ремонт і обслуговування автомобілів у Хмельницькому</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/booking.css">
 </head>
+
 <body>
-    
-    <header>
-        <div class="logo-container">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="Pictures/LogoImage.png" alt="Авто Сервіс">
-                </a>
-            </div>
-            <div class="logo-text">
-                <h1>Auto Service</h1>
-            </div>
-        </div>
-
-        <div class="menu-social-container">
-            
-            <nav>
-                <ul>
-                    <li><a href="index.html">Головна</a></li>
-                    <li><a href="about.html" >Про нас</a></li>
-                    <li><a href="services.html">Послуги</a></li>
-                    <li><a href="booking.html" class="active">Записатись</a></li>
-                    <li><a href="contacts.html">Контакти</a></li>
-                </ul>
-            </nav> 
-    
-            <div class="social-icons">
-                
-                <div class="social-icons">
-                    <a href="https://www.instagram.com/andrey_rybak1/" target="_blank"> <img src="Pictures/instagram.png" alt="Instagram"></a>
-                    <a href="https://www.tiktok.com/@userl66snows7n/" target="_blank"> <img src="Pictures/tiktok.png" alt="tiktok"></a>   
-                </div> 
-            </div> 
-        </div>     
-        
-    </header>
-    <!-- Вміст основних секцій тут -->
-    <section class="services-intro">
-        <div class="services-intro-content">
-          <h1>Записатися</h1>
-        </div>
-    </section>
-
-    <section class="booking-form">
-        <div class="container">
-          <form action="path_to_your_server_script" method="post">
-            <h2 class="form-title">Дані клієнта</h2>
-            
-            <div class="form-inline-group">
-                <div class="form-group">
-                  <label for="name">Ім'я *</label>
-                  <input type="text" id="name" name="name" required>
+    <div class="wrapper">
+        <header class="header">
+            <section class="header__container">
+                <div class="header__logo">
+                    <a href="index.html" aria-label="Перейти на головну сторінку">
+                        <img src="assets/images/LogoImage.webp" alt="Логотип Авто Сервісу">
+                    </a>
+                    <div class="header__title">Auto Service</div>
                 </div>
-                <div class="form-group">
-                  <label for="email">Email *</label>
-                  <input type="email" id="email" name="email" required>
+
+                <div class="header__nav">
+                    <nav class="nav" aria-label="Головна навігація">
+                        <input type="checkbox" id="toggle" class="input-toggler">
+                        <label for="toggle" class="menu-toggler">
+                            <span class="menu-toggler-line"></span>
+                            <span class="menu-toggler-line"></span>
+                            <span class="menu-toggler-line"></span>
+                        </label>
+
+                        <ul id="menu" class="nav__list">
+                            <li class="nav__item"><a href="index.html" aria-current="page"
+                                    class="nav__link">Головна</a></li>
+                            <li class="nav__item"><a href="about.html" class="nav__link">Про нас</a></li>
+                            <li class="nav__item"><a href="services.html" class="nav__link">Послуги</a></li>
+                            <li class="nav__item"><a href="booking.html" class="nav__link nav__link--active">Записатись</a></li>
+                            <li class="nav__item"><a href="#contacts" class="nav__link">Контакти</a></li>
+
+                            <li class="nav__item">
+                                <div class="social-icons" aria-label="Соціальні мережі">
+                                    <a href="https://www.instagram.com/andrey_rybak1/" target="_blank"
+                                        aria-label="Instagram" class="social-icons__link">
+                                        <svg aria-hidden="true" focusable="false" role="img" class="social-icons__icon"
+                                            fill="#fff" xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                                            viewBox="0 0 551.034 551.034"
+                                            style="enable-background:new 0 0 000.000 000.000;" xml:space="preserve">
+                                            <path class="logo" fill="#fff"
+                                                d="M386.878,0H164.156C73.64,0,0,73.64,0,164.156v222.722 c0,90.516,73.64,164.156,164.156,164.156h222.722c90.516,0,164.156-73.64,164.156-164.156V164.156 C551.033,73.64,477.393,0,386.878,0z M495.6,386.878c0,60.045-48.677,108.722-108.722,108.722H164.156 c-60.045,0-108.722-48.677-108.722-108.722V164.156c0-60.046,48.677-108.722,108.722-108.722h222.722 c60.045,0,108.722,48.676,108.722,108.722L495.6,386.878L495.6,386.878z" />
+
+                                            <path fill="#fff"
+                                                d="M275.517,133C196.933,133,133,196.933,133,275.516 s63.933,142.517,142.517,142.517S418.034,354.1,418.034,275.516S354.101,133,275.517,133z M275.517,362.6 c-48.095,0-87.083-38.988-87.083-87.083s38.989-87.083,87.083-87.083c48.095,0,87.083,38.988,87.083,87.083 C362.6,323.611,323.611,362.6,275.517,362.6z" />
+
+                                            <circle fill="#fff" cx="418.306" cy="134.072" r="34.149" />
+                                        </svg>
+                                    </a>
+                                    <a href="https://www.tiktok.com/@userl66snows7n/" target="_blank"
+                                        aria-label="TikTok" class="social-icons__link">
+                                        <svg aria-hidden="true" focusable="false" role="img" class="social-icons__icon"
+                                            fill="#fff" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30"
+                                            height="30" viewBox="0 0 50 50">
+                                            <path
+                                                d="M41,4H9C6.243,4,4,6.243,4,9v32c0,2.757,2.243,5,5,5h32c2.757,0,5-2.243,5-5V9C46,6.243,43.757,4,41,4z M37.006,22.323 c-0.227,0.021-0.457,0.035-0.69,0.035c-2.623,0-4.928-1.349-6.269-3.388c0,5.349,0,11.435,0,11.537c0,4.709-3.818,8.527-8.527,8.527 s-8.527-3.818-8.527-8.527s3.818-8.527,8.527-8.527c0.178,0,0.352,0.016,0.527,0.027v4.202c-0.175-0.021-0.347-0.053-0.527-0.053 c-2.404,0-4.352,1.948-4.352,4.352s1.948,4.352,4.352,4.352s4.527-1.894,4.527-4.298c0-0.095,0.042-19.594,0.042-19.594h4.016 c0.378,3.591,3.277,6.425,6.901,6.685V22.323z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-            </div>
+            </section>
+        </header>
 
-            <div class="form-group">
-              <label for="phone">Телефон</label>
-              <input type="tel" id="phone" name="phone">
-            </div>
-            <div class="form-group">
-              <label for="message">Ваше повідомлення</label>
-              <textarea id="message" name="message"></textarea>
-            </div>
-            <div class="form-group">
-              <input type="submit" class="btn" value="Записатися">
-            </div>
-          </form>
-        </div>
-      </section>
-      
-      
+        <main role="main" aria-label="main content">
+            <section class="booking-intro" aria-labelledby="booking-heading">
+                <div class="booking-intro__content booking__container">
+                    <h4 class="booking-intro__subheading">ЗАПИСАТИСЬ</h4>
+                    <h1 class="booking-intro__heading">На консультацію</h1>
+                </div>
+            </section>
 
-    <section class="parallax-section-about">
-    </section> 
+            <section class="booking-form booking__container" aria-labelledby="client-data-heading">
+                <div class="booking-form__container">
+                    <h2 id="client-data-heading" class="booking-form__title">Дані клієнта</h2>
+                    <form action="path_to_your_server_script" method="post" class="booking-form">
 
-    <footer>
-        <div class="footer-section">
-            <h3>Графік роботи</h3>
-            <p>Пн — Пт: 9:00 — 18:00</p>
-            <p>Сб: 9:00 — 16:00</p>
-            <p>Нд: вихідний</p>
-        </div>
-        <div class="footer-section">
-            <h3>Інформація</h3>
-            <p>Телефон: +38 096 2813 659</p>
-            <p>Ел. адреса: boghtml@gmail.com</p>
-        </div>
-        <div class="footer-section">
-            <h3>Розташування</h3>
-            <p>вул. Горбанчука, 3</p>
-            <p>м. Хмельницький, 01001, Україна</p>
-        </div>
-        <div class="footer-section call-to-action">
-            <h3>Скільки коштує?</h3>
-            <button>Заповніть форму</button>
-        </div>
+                        <div class="booking-form__group booking-form__group--inline">
+                            <div class="booking-form__field">
+                                <label for="name" class="booking-form__label">Ім'я *</label>
+                                <input type="text" id="name" name="name" required class="booking-form__input">
+                            </div>
+                            <div class="booking-form__field">
+                                <label for="email" class="booking-form__label">Email *</label>
+                                <input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                                    class="booking-form__input" title="Будь ласка, введіть адресу електронної пошти у форматі">
+                            </div>
+                        </div>
 
-        <div class="map">
+                        <div class="booking-form__field">
+                            <label for="phone" class="booking-form__label">Телефон</label>
+                            <input type="tel" id="phone" name="phone" class="booking-form__input">
+                        </div>
+                        <div class="booking-form__field">
+                            <label for="message" class="booking-form__label">Ваше повідомлення</label>
+                            <textarea id="message" name="message" class="booking-form__textarea"></textarea>
+                        </div>
+                        <div class="booking-form__field">
+                            <input type="submit" class="btn btn--lg" value="Записатися">
+                        </div>
+                    </form>
+                </div>
+            </section>
             
+            <section class="parallax-section"></section>
+
+            <section class="contacts contacts__container">
+                <h2 class="contacts__headings">Контакти</h2>
+                <div id="contacts" class="contacts__table" aria-labelledby="contacts__heading" role="region">
+                    <div class="contacts__section">
+                        <h3 class="contacts__title">Графік роботи</h3>
+                        <p class="contacts__text"><b>Пн — Пт:</b> <span>9:00 — 18:00</span></p>
+                        <p class="contacts__text"><b>Сб:</b> <span>9:00 — 16:00</span></p>
+                        <p class="contacts__text"><b>Нд:</b> <span>вихідний</span></p>
+                    </div>
+                    <div class="contacts__section">
+                        <h3 class="contacts__title"><b>Інформація</b></h3>
+                        <p class="contacts__text"><b>Телефон:</b> <a href="tel:+380962813659" class="contacts__link">+38
+                                096 2813 659</a></p>
+                        <p class="contacts__text"><b>Ел. адреса:</b> <a href="mailto:boghtml@gmail.com"
+                                class="contacts__link">boghtml@gmail.com</a></p>
+                    </div>
+                    <div class="contacts__section">
+                        <h3 class="contacts__title">Розташування</h3>
+                        <p class="contacts__text">вул. Горбанчука, 3</p>
+                        <p class="contacts__text">м. Хмельницький, 01001, Україна</p>
+                    </div>
+                    <div class="contacts__section contacts__section--cta">
+                        <span class="contacts__title contacts__title--cta">Скільки коштує?</span>
+                        <a href="booking.html" class="btn call-to-action-btn btn--sm">Заповніть форму</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__privacy">
+                <a href="#" class="footer__link">Умови та положення</a>
+                <a href="#" class="footer__link">Політика щодо файлів cookie</a>
+                <a href="#" class="footer__link">Політика конфіденційності</a>
+                <span class="footer__copyright">&copy; 2024 Авто Сервіс</span>
+            </div>
+        </footer>
     </div>
-    
-    <div class="footer-bottom">
-        <a href="#">Умови та положення</a>
-        <a href="#">Політика щодо файлів cookie</a>
-        <a href="#">Політика конфіденційності</a>
-        <p>© 2024 Авто Сервіс</p>
-    </div>
-
-    </footer>
-
-
 </body>
-</html>
 
+</html>

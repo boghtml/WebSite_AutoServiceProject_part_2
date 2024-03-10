@@ -1,0 +1,75 @@
+.about-intro {
+    position: relative;
+    color: var(--background-color);
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url('../images/empty-concrete-texture.webp');
+}
+
+.about-intro__content .about-intro__image {
+    width: 100%;
+    height: auto;
+}
+
+.about-intro__image {
+    width: 100%;
+    height: auto;
+}
+
+.about-intro__content {
+    height: 25rem;
+    position: relative;
+    z-index: 2;
+    max-width: 50rem;
+    margin: 0 auto;
+    background: var(--text-transparent-color);
+    padding: 2.5rem 0;
+}
+
+.about-intro__heading {
+    color: var(--secondary-color);
+    margin-top: 1rem;
+}
+
+.about-intro__heading,
+.about-intro__subheading {
+    text-align: left;
+}
+
+.about__description {
+    padding: 4rem 0;
+    padding-top: 22rem;
+    background: var(--background-color)
+}
+
+.about-intro__text {
+    max-width: 50rem;
+    margin: 1rem auto;
+    text-align: left;
+    color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+
+    .about-intro__heading,
+    .about-intro__subheading {
+        margin: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .about-intro__heading {
+        font-size: 4rem;
+    }
+
+    .about-intro__subheading {
+        font-size: 2rem;
+    }
+
+    .about-intro__content {
+        padding: 4rem 0;
+    }
+
+    .about__description {
+        padding: 2rem 1rem;
+        padding-top: rem;
+    }
+}
