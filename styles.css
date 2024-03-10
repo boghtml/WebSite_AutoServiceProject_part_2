@@ -325,39 +325,40 @@ footer {
   }
   
 /*Відгуки */
+/*Відгуки */
 
 .testimonials-section {
     background: url('Pictures/dirtyWall.jpg') no-repeat center center/cover; /* Шлях до вашого фонового зображення */
     padding: 40px 0; /* Додайте додатковий відступ, якщо потрібно */
   }
-  
+
   .container {
     width: 80%;
     margin: 0 auto; /* Центрування контейнера */
     text-align: center; /* Центрування тексту */
   }
-  
+
   .testimonial {
     margin: 20px; /* Відступ між колонками відгуків */
     display: inline-block;
     vertical-align: top;
-    width: 30%; /* Встановлює ширину колонки відгуку */
+    width: 40%; /* Встановлює ширину колонки відгуку */
     background: rgba(62, 56, 56, 0.5); /* Тло для кожного відгуку з невеликою прозорістю */
-    padding: 20px; /* Відступи всередині блоку відгуку */
+    padding: 10px; /* Відступи всередині блоку відгуку */
   }
-  
+
   blockquote {
     font-style: italic; /* Курсив для цитати */
     color: #fff; /* Колір тексту відгуку */
     padding: 0 10px; /* Відступи для цитати */
   }
-  
+
   .author {
     font-weight: bold; /* Жирний текст для автора відгуку */
     color: #ff5722; /* Колір імені автора */
     margin-top: 10px; /* Відстань від цитати до імені автора */
   }
-  
+
   @media (max-width: 768px) {
     .testimonial {
       width: 100%; /* Кожен відгук займає повну ширину на мобільних пристроях */
@@ -547,11 +548,6 @@ footer {
 .booking-form {
     background: #f7f7f7;
     padding: 40px 0;
-  }
-  
-  .container {
-    max-width: 600px; /* Або інша максимальна ширина, якщо потрібно */
-    margin: 0 auto;
   }
   
   .form-title {
