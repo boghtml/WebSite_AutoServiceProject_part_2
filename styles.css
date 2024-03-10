@@ -40,7 +40,7 @@ nav {
     display: flex;
     justify-content: center; /* Центруємо елементи навігаційної панелі */
     padding: 0;
-    margin: 0 10px; /* Додаємо невеликий відступ між nav та соціальними іконками */
+    margin: 0 20px; /* Додаємо невеликий відступ між nav та соціальними іконками */
 }
 
 nav ul {
@@ -56,7 +56,7 @@ nav li {
 nav a {
     text-decoration: none;
     color: white;
-    padding: 5px 10px; /* Відступи навколо посилань */
+    padding: 8px 15px; /* Відступи навколо посилань */
 }
 
 
@@ -366,32 +366,59 @@ footer {
   }
   
 /*Про нас */
-.about-us {
+.about-intro {
     position: relative;
     color: white;
-    background-size: cover;
+    text-align: center;
+    background: url('Pictures/empty-concrete-texture.jpg') center center / cover no-repeat;
+    padding: 70px 0;
+  }
+  
+  .about-content {
+    max-width: 800px; /* Або будь-який розмір, що вам підходить */
+    margin: 0 auto; /* Центрування контенту */
+    background: rgba(0, 0, 0, 0.7); /* Додаємо напівпрозорий темний фон для тексту */
+    padding: 40px; /* Внутрішні відступи */
+    border-radius: 8px; /* Заокруглені кути */
+  }
+  
+  .about-content h1 {
+    margin-bottom: 20px; /* Відстань між заголовком і зображенням */
+  }
+  
+  .about-content .about-image {
+    width: 100%; /* Ширина зображення */
+    height: auto; /* Автоматична висота для збереження пропорцій зображення */
+    margin-bottom: 20px; /* Відстань між зображенням і текстом */
+  }
+  
+  .about-content p {
+    text-align: left; /* Вирівнювання тексту по лівому краю */
+    color: #fff; /* Білий колір тексту для кращої читабельності */
+    line-height: 1.6; /* Міжрядковий інтервал */
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .about-content {
+      padding: 20px;
+    }
+  
+    .about-content h1 {
+      font-size: 24px; /* Менший шрифт для заголовка на мобільних */
+    }
+  
+    .about-content p {
+      font-size: 16px; /* Менший шрифт для тексту на мобільних */
+    }
+  }
+  
+  .parallax-section-about {
+    height: 400px; /* Висота паралакс секції */
+    background-attachment: fixed;
     background-position: center;
-    padding: 50px 0; /* Відступи зверху та знизу */
-}
-
-.about-intro {
-    max-width: 600px; /* Максимальна ширина картинки */
-    margin: 0 auto; /* Центрування картинки */
-    padding: 20px;
-}
-
-.about-intro img {
-    width: 100%; /* Зробити картинку адаптивною */
-    height: auto; /* Зберегти пропорції */
-    display: block;
-    margin-bottom: 30px; /* Відступ знизу картинки */
-}
-
-.about-details {
-    background: rgba(0, 0, 0, 0.7); /* Полупрозорий чорний фон для тексту */
-    padding: 30px;
-    margin-top: -30px; /* Ефект нашарування на картинку */
-}
-
-
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('Pictures/ParalaxPicture.jpg'); /* Вставте шлях до вашого фонового зображення */
+  }
+  
   
