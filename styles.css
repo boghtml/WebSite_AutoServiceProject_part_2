@@ -1,0 +1,399 @@
+/* Задаємо базові стилі */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Стилізуємо шапку */
+header {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center; /* Забезпечує вирівнювання елементів логотипу по центру */
+}
+
+.logo {
+    margin-right: 0; /* Видаляємо будь-які відступи справа */
+}
+
+.logo img {
+    height: 80px; /* Ваша висота логотипу */
+}
+
+.logo-text h1 {
+    margin-left: 10px; /* Малий відступ від логотипу до тексту */
+    font-size: 22px; /* Величина шрифту для тексту */
+    color: #fff; /* Білий колір тексту */
+    font-weight: normal; /* Нормальна жирність шрифту, якщо не потрібно жирний */
+}
+
+
+/* Стилі для навігаційного меню */
+nav {
+    display: flex;
+    justify-content: center; /* Центруємо елементи навігаційної панелі */
+    padding: 0;
+    margin: 0 10px; /* Додаємо невеликий відступ між nav та соціальними іконками */
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+nav li {
+    margin: 0 10px; /* Відстань між пунктами меню */
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px; /* Відступи навколо посилань */
+}
+
+
+nav ul li a.active,
+nav ul li a:hover {
+    border-bottom: 2px solid orange; /* Підкреслення для активного пункту */
+}
+
+.menu-social-container {
+    display: flex;
+    justify-content: center; /* Центруємо вміст контейнера */
+    flex-grow: 1; /* Дозволяємо контейнеру розширюватись і заповнювати вільне місце */
+}
+/* Стилі для соціальних іконок */
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a {
+    margin: 0 5px; /* Відстань між соціальними іконками */
+}
+
+.social-icons img {
+    width: 24px; /* Розмір соціальних іконок */
+}
+
+/* Стилі для головного контенту */
+/* Ви зможете додати власні класи та ідентифікатори відповідно до вашого HTML */
+
+
+/* Стилі для футера */
+footer {
+    background-color: #333; /* Темно-сірий фон */
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    margin: 10px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    margin-bottom: 5px;
+}
+
+.call-to-action button {
+    background-color: orange; /* Оранжевий колір кнопки */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center; /* Вирівнювання по центру */
+    align-items: center; /* Додаємо центрування по вертикалі */
+    flex-wrap: wrap; /* Враховуйте, що це може впливати на центрування при малому просторі */
+    gap: 10px; /* Відступ між елементами */
+    width: 100%;
+    flex-direction: row; /* Уточнюємо, що елементи повинні бути в ряд */
+    text-align: center; /* Центрування тексту для випадку, коли елементи обгортаються */
+}
+
+.footer-bottom a,
+.footer-bottom p {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+    flex: 0 0 auto; /* Додано, щоб уникнути стиснення посилань */
+}
+
+
+@media (max-width: 768px) {
+    .footer-section {
+        flex-basis: 50%; /* На маленьких екранах кожен блок займає 50% ширини */
+    }
+
+    .call-to-action {
+        max-width: none; /* Відміняємо обмеження по ширині для call-to-action на маленьких екранах */
+        width: 100%; /* На маленьких екранах call-to-action займає всю ширину */
+        order: -1; /* Переміщуємо call-to-action на початок футера */
+    }
+
+    .map {
+        order: -2; /* Переміщуємо карту перед call-to-action */
+    }
+
+    .footer-bottom {
+        text-align: left; /* На маленьких екранах текст вирівнюється по лівому краю */
+    }
+}
+
+/* Додайте загальні стилі в початок вашого CSS файлу */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('Pictures/backroundImage1.jpg'); /* Вкажіть шлях до фонового зображення */
+    background-size: cover;
+    background-position: center;
+    padding: 70px 20px; /* Додайте відступ */
+  }
+  
+  .hero-content {
+    max-width: 540px; /* Встановлюємо максимальну ширину для контенту */
+    margin-left: auto; /* Автоматичний відступ зліва, що відштовхує блок праворуч */
+    margin-right: 350px; /* Додаємо невеликий відступ справа, якщо потрібно */
+    /* Інші стилі залишаються без змін */
+  }
+
+  .hero-content h1 {
+    color: #fff; /* Білий колір тексту */
+    font-size: 2.5rem; /* Розмір шрифту */
+    margin-bottom: 20px; /* Відступ знизу для заголовка */
+  }
+  
+  .hero-content p {
+    color: #fff; /* Білий колір тексту */
+    font-size: 1.2rem; /* Розмір шрифту */
+    margin-bottom: 30px; /* Відступ знизу для параграфа */
+  }
+  
+  .btn {
+    background-color: #ff5722; /* Колір фону кнопки */
+    color: #fff; /* Білий колір тексту кнопки */
+    padding: 10px 20px; /* Відступи кнопки */
+    text-decoration: none; /* Видалення підкреслення */
+    transition: background-color 0.3s ease; /* Анімація для кнопки */
+  }
+  
+  .btn:hover {
+    background-color: #e64a19; /* Колір фону кнопки при наведенні */
+  }
+  
+  /* Ви можете додати анімацію або ефекти для .hero-image залежно від вашого дизайну */
+  
+
+  .services-overview {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Три колонки з однаковою шириною */
+    gap: 5px; /* Відстань між колонками */
+  }
+  
+  .image-column {
+    padding: 5px;
+
+  }
+  .image-column:first-child {
+    margin-right: 5px; /* Відступ між першою та другою фотографіями */
+  }
+  
+  .image-column:last-child {
+    margin-left: 5px; /* Відступ між другою фотографією та текстовою колонкою */
+  }
+  .image-column img {
+    width: 100%; /* Щоб фото заповнювало всю ширину колонки */
+    height: auto; /* Збереження пропорцій фото */
+  }
+  
+  .text-column {
+    /* Стилі для колонки з текстом */
+    background: white; /* Білий фон для текстової колонки */
+    padding: 5px; /* Внутрішні відступи */
+  }
+  
+  .text-column h2 {
+    font-size: 24px; /* Більший шрифт для заголовка */
+  }
+  
+  .text-column p {
+    font-size: 18px; /* Більший шрифт для абзацу */
+  }
+  
+  .services-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px; /* Збільшений відступ між пунктами списку */
+  }
+  
+  .services-list li img {
+    margin-right: 20px; /* Відступ між іконкою та текстом */
+  }
+  
+  .btn {
+    background-color: #ff5722; /* Колір фону кнопки */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    /* Додайте інші стилі кнопки, як вам потрібно */
+  }
+  
+  .services-list img {
+    max-width: 50px; /* Або інший розмір, що підходить для ваших іконок */
+    max-height: 50px; /* Для збереження пропорцій іконки можуть бути іншими */
+    margin-right: 10px; /* Відступ зправа від іконки до тексту */
+  }
+  
+  .image-column img {
+    max-width: 100%; /* Забезпечує, що зображення не виходить за межі клітинки */
+    max-height: 450px; /* Максимальна висота зображення */
+    width: auto; /* Збереження пропорцій зображення */
+    display: block; /* Усунення будь-яких дефолтних відступів зображень */
+    margin: 0 auto; /* Центрування зображення в клітинці */
+  }
+.services-overview {
+  display: grid;
+  grid-template-columns: 1.2fr 1.2fr 1.6fr; /* Перші дві колонки для фото, третя для тексту */
+  gap: 20px; /* Відстань між колонками */
+}
+
+  /* Додайте медіа-запити для респонсивності та інші стилі за потребою */
+  
+
+  .parallax-section {
+    position: relative;
+    background-image: url('Pictures/ParalaxPicture.jpg'); /* Шлях до вашого фонового зображення */
+    background-attachment: fixed; /* Забезпечує паралакс ефект */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px; /* Висота секції з паралаксом */
+  }
+  
+  .parallax-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Або будь-який колір, що контрастує з фоновим зображенням */
+    text-align: center; /* Центрування тексту */
+    width: 80%; /* Або будь-яка ширина, яка вам підходить */
+  }
+  
+  .parallax-section h2,
+  .parallax-section p {
+    margin-bottom: 20px; /* Відступ між елементами */
+  }
+  
+  .more-info-btn {
+    background-color: #ff5722; /* Світліший фон для виділення кнопки */
+    color: #333; /* Темний текст на кнопці */
+    padding: 12px 25px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px; /* Відстань від абзацу до кнопки */
+    transition: background-color 0.3s ease; /* Анімація для фону кнопки */
+  }
+  
+  .more-info-btn:hover {
+    background-color: #bdbdbd; /* Зміна фону при наведенні */
+  }
+  
+/*Відгуки */
+
+.testimonials-section {
+    background: url('Pictures/dirtyWall.jpg') no-repeat center center/cover; /* Шлях до вашого фонового зображення */
+    padding: 40px 0; /* Додайте додатковий відступ, якщо потрібно */
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto; /* Центрування контейнера */
+    text-align: center; /* Центрування тексту */
+  }
+  
+  .testimonial {
+    margin: 20px; /* Відступ між колонками відгуків */
+    display: inline-block;
+    vertical-align: top;
+    width: 30%; /* Встановлює ширину колонки відгуку */
+    background: rgba(62, 56, 56, 0.5); /* Тло для кожного відгуку з невеликою прозорістю */
+    padding: 20px; /* Відступи всередині блоку відгуку */
+  }
+  
+  blockquote {
+    font-style: italic; /* Курсив для цитати */
+    color: #fff; /* Колір тексту відгуку */
+    padding: 0 10px; /* Відступи для цитати */
+  }
+  
+  .author {
+    font-weight: bold; /* Жирний текст для автора відгуку */
+    color: #ff5722; /* Колір імені автора */
+    margin-top: 10px; /* Відстань від цитати до імені автора */
+  }
+  
+  @media (max-width: 768px) {
+    .testimonial {
+      width: 100%; /* Кожен відгук займає повну ширину на мобільних пристроях */
+      margin: 10px 0; /* Відстань між відгуками на мобільних пристроях */
+    }
+  }
+  
+/*Про нас */
+.about-intro {
+    position: relative;
+    text-align: center; /* Центрування тексту */
+    color: white; /* Білий колір тексту */
+  }
+  
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5; /* Додаємо прозорість для затемнення зображення */
+    z-index: -1; /* Забезпечуємо, що фон буде під текстом */
+  }
+  
+  .intro-image img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0; /* Відступ зверху і знизу для вступної картинки */
+  }
+  
+  .about-text {
+    background: rgba(0, 0, 0, 0.7); /* Затемнений фон для кращої читабельності тексту */
+    display: inline-block;
+    margin: 20px; /* Відступ для тексту */
+    padding: 20px; /* Внутрішні відступи */
+  }
+  
