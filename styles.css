@@ -413,12 +413,213 @@ footer {
   }
   
   .parallax-section-about {
-    height: 400px; /* Висота паралакс секції */
+    height: 350px; /* Висота паралакс секції */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url('Pictures/ParalaxPicture.jpg'); /* Вставте шлях до вашого фонового зображення */
+  }
+  
+
+  /* Наші послуги */
+  .services-intro {
+    background: url('Pictures/empty-concrete-texture.jpg') center center / cover no-repeat;
+    position: relative;
+    text-align: center;
+    padding: 50px 0;
+  }
+  .services-intro::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); /* Чорний фон з прозорістю 50% */
+    z-index: 1;
+  }
+  
+  /* Забезпечуємо, щоб текст та кнопки були над overlay */
+  .services-intro-content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .services-intro-content h1,
+  .services-intro-content p {
+    color: white;
+  }
+  .booking-button-container {
+    display: flex;
+    justify-content: center; /* Центрування по горизонталі */
+    padding: 20px; /* Відступ зверху та знизу для кнопки */
+  }
+  
+  .btn {
+    background-color: #ff5722; /* Помаранчевий */
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px; /* Збільште розміри */
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 5px; /* Закруглені кути */
+  }
+  
+  /* Використовуйте цей стиль, щоб відцентрувати кнопку відносно батьківського елемента */
+  .container {
+    text-align: center;
+  }
+  
+  .services-pricing {
+    text-align: center; /* Центрування всього тексту в секції послуг */
+    padding: 50px 0;
+    background: #f5f5f5; /* Світлий фон для розділу */
+  }
+  
+  .services-pricing .container {
+    width: 100%; /* Або інша ширина за бажанням */
+    margin: 0 auto; /* Центрування контейнера */
+  }
+
+  .services-table {
+    width: 100%;
+    border-collapse: collapse; /* Видалення відступів між комірками */
+    text-align: left; /* Вирівнювання тексту по лівому краю */
+    margin-top: 20px;
+  }
+
+  .services-pricing h2 {
+  margin-bottom: 20px; /* Відступ знизу для заголовка */
+}
+  .services-table th,
+  .services-table td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd; /* Горизонтальні лінії між рядками */
+  }
+  
+  .services-table th {
+    background: #eee; /* Світлий фон для заголовків колонок */
+    color: #333; /* Темний текст для заголовків */
+  }
+  
+  .services-table tr:hover {
+    background-color: #f1f1f1; /* Зміна фону при наведенні */
+  }
+  
+
+.services-table {
+  border-collapse: collapse; /* Видаляє відступи між комірками */
+  margin-top: 20px; /* Відступ зверху для таблиці */
+}
+
+.services-table th,
+.services-table td {
+  padding: 10px; /* Зменшуємо відступи всередині комірок */
+  text-align: left; /* Вирівнювання тексту по лівому краю */
+}
+
+/* Щоб вирівняти таблицю по центру, ви можете використати автоматичні відступи */
+.services-table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Щоб зменшити ширину колонок та зробити відступи між ними меншими, встановіть максимальну ширину таблиці */
+.services-table {
+  width: 100%; /* Заповнення ширини контейнера */
+  max-width: 750px; /* Максимальна ширина таблиці */
+}
+
+/* Опціонально, якщо вам потрібно зменшити ширину конкретної колонки */
+.services-table td:first-child {
+  width: 70%; /* Приклад для першої колонки */
+}
+
+.services-table td:last-child {
+  width: 30%; /* Приклад для другої колонки */
+}
+
+  /* Тут додається CSS для списку послуг, який у вас вже є в коді */
+  
+
+/*Оформлення замовлення */ 
+.booking-form {
+    background: #f7f7f7;
+    padding: 40px 0;
+  }
+  
+  .container {
+    max-width: 600px; /* Або інша максимальна ширина, якщо потрібно */
+    margin: 0 auto;
+  }
+  
+  .form-title {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .form-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .form-group {
+    flex: 1; /* Забезпечує рівномірний розподіл простору між елементами */
+    min-width: 250px; /* Мінімальна ширина для підтримки розміщення на одному рівні */
+    margin-bottom: 20px;
+  }
+  
+  .form-inline-group {
+    display: flex;
+    justify-content: space-between; /* це розділяє елементи форми і робить простір між ними */
+    align-items: center; /* це вирівнює елементи по вертикалі */
+  }
+  
+  .form-inline-group .form-group {
+    margin-right: 30px; /* додає відступ справа для кожного .form-group, крім останнього */
+  }
+  
+  .form-inline-group .form-group:last-child {
+    margin-right: 0; /* видаляє відступ справа для останнього .form-group */
+  }
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="tel"],
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .form-group input[type="submit"] {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px; /* Забезпечує відступ зверху для кнопки */
+  }
+  
+  /* Відповідні медіа-запити для респонсивності */
+  @media (max-width: 768px) {
+    .form-row {
+      flex-direction: column;
+    }
+    
+    .form-group {
+      flex: none; /* Анулюємо flex-властивості, щоб елементи займали всю доступну ширину */
+    }
   }
   
   
