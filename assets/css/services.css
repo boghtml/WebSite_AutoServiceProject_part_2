@@ -9,9 +9,14 @@ main {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url('../images/empty-concrete-texture.webp');
 }
 
-.services-intro__content {
-    height: 15rem;
+.services-intro__content,
+.services-intro__image {
     width: 100%;
+    height: auto;
+}
+
+.services-intro__content {
+    height: 30rem;
     position: relative;
     z-index: 2;
     max-width: 50rem;
@@ -43,6 +48,7 @@ main {
 .services-pricing {
     text-align: center;
     padding: 3rem 0;
+    padding-top: 18rem;
     background: var(--background-color);
 }
 

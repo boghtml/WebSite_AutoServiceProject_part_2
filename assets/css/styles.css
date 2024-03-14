@@ -282,30 +282,38 @@ footer {
   transition: var(--transition-animation-easy);
 }
 
-.btn:hover {
-  background-color: var(--text-color-accent);
-  color: var(--secondary-color);
-  border: 1px solid var(--secondary-color);
-}
-
 .call-to-action-btn {
   background-color: var(--background-color);
   color: var(--secondary-color);
   border: 1px solid var(--secondary-color);
 }
 
-.call-to-action-btn:hover {
-  background-color: var(--call-to-action-color);
-}
-
 .btn--lg {
   width: 100%;
   border: none;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
 }
 
 .btn--sm {
-  width: 8rem;
-  font-size: .9rem;
+  min-width: 8rem;
+  font-size: 1rem;
+  padding: .5rem 1rem;
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: var(--box-shadow-1);
+}
+
+.btn:hover {
+  background-color: var(--text-color-accent);
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+}
+
+.call-to-action-btn:hover {
+  background-color: var(--call-to-action-color);
 }
 
 @media (max-width: 768px) {
