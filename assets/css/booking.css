@@ -36,85 +36,132 @@
     height: auto;
 }
 
-
 /* FORM */
-/* Основной контейнер формы */
+
 .booking-form {
-    max-width: 40rem;
-    margin: 0 auto;
-    margin-top: 4rem;
-    padding: 1.2rem;
+    max-width: 50rem;
+    margin: 6rem auto;
+    padding: 3rem;
     background-color: var(--text-color-accent);
-    border-radius: .5rem;
+    box-shadow: var(--box-shadow-1);
 }
 
-/* Стиль для группировки полей, особенно для инлайн-групп */
-.booking-form__group {
-    display: flex;
-    flex-wrap: wrap;
+.booking-form__fieldset {
+    border: none;
+    padding: 0;
+    margin-bottom: 2rem;
+    padding: var(--input-margin-bottom);
+    border-radius: var(--border-radius-1);
+    border: var(--border-1);
+}
+
+.booking-form__title {
+    font-size: 1.5rem;
+    font-weight: 700;
     margin-bottom: 1rem;
+    color: var(--primary-color);
 }
 
-.booking-form__group--inline .booking-form__field {
-    flex: 1;
-    min-width: 15rem;
-    margin-right: 1.2rem;
-}
-
-/* Стилизация полей формы */
-.booking-form__field {
-    margin-bottom: 1.5rem;
+.booking-form__group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
 }
 
 .booking-form__label {
-    display: block;
-    margin-bottom: .325rem;
-    color: var(--text-color);
     font-size: 1rem;
-    font-weight: bold;
+    font-weight: 500;
+    display: block;
+    color: var(--form-label-color);
+    padding: 18px 4px 8px;
 }
 
 .booking-form__input,
-.booking-form__textarea {
+.booking-form__textarea,
+.booking-form__select {
     width: 100%;
-    padding: .7rem 1rem;
+    padding: 0.5rem;
     border: 1px solid var(--border-color);
-    font-size: .8rem;
-    color: #333;
+    border-radius: 3px;
+    font-size: 1rem;
+    transition: var(--transition-animation-easy);
 }
 
 .booking-form__input:focus,
-.booking-form__textarea:focus {
-    border-color: var(--secondary-color);
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 1rem var(--secondary-color);
+.booking-form__textarea:focus,
+.booking-form__select:focus {
     outline: none;
+    border-color: var(--secondary-color);
+    box-shadow: var(--focus-outline);
+}
+
+.booking-form__textarea {
+    height: 8rem;
+    resize: vertical;
+}
+
+.booking-form_radio-group {
+    padding: 1rem;
+    border: var(--border-2);
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.form-description {
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    margin-top: 0.5rem;
 }
 
 @media (max-width: 768px) {
-    .form-row {
-        flex-direction: column;
-    }
 
-    .form-group {
-        flex: none;
-    }
-
-    .booking-intro__heading,
+.booking-intro__heading,
     .booking-intro__subheading {
         margin: 1rem;
         margin-bottom: 2rem
     }
-    
+
     .booking-intro__heading {
         font-size: 3rem;
     }
-        
+
     .booking-intro__subheading {
         font-size: 2rem;
     }
-    
+
     .booking-intro__content {
         padding: 4rem 0;
         height: 18rem;
+    }
+
+    .booking__container {
+        margin: 0;
+    }
+
+    .booking-form {
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    .booking-form__title {
+        font-size: 1.2rem;
+    }
+
+    .booking-form__group {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .radio-group {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .booking-form__group {
+        grid-template-columns: 1fr;
     }
 }

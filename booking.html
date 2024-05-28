@@ -31,7 +31,7 @@
                             <span class="menu-toggler-line"></span>
                             <span class="menu-toggler-line"></span>
                         </label>
-
+                        
                         <ul id="menu" class="nav__list">
                             <li class="nav__item"><a href="index.html" aria-current="page"
                                     class="nav__link">Головна</a></li>
@@ -83,34 +83,107 @@
                 </div>
             </section>
 
-            <section class="booking-form booking__container" aria-labelledby="client-data-heading">
+            <section class="booking__container" aria-labelledby="client-data-heading">
                 <div class="booking-form__container">
-                    <h2 id="client-data-heading" class="booking-form__title">Дані клієнта</h2>
-                    <form action="path_to_your_server_script" method="post" class="booking-form">
 
-                        <div class="booking-form__group booking-form__group--inline">
-                            <div class="booking-form__field">
-                                <label for="name" class="booking-form__label">Ім'я *</label>
-                                <input type="text" id="name" name="name" required class="booking-form__input">
+                    <form method="post" class="booking-form">
+                    
+                        <fieldset class="booking-form__fieldset">
+                            <legend id="contact-info-heading" class="booking-form__title">Контактна інформація</legend>
+                            <div class="booking-form__group booking-form__group--inline">
+                                <div class="booking-form__field">
+                                    <label for="name" class="booking-form__label">Ім'я *</label>
+                                    <input type="text" id="name" name="name" required class="booking-form__input" aria-label="First Name"
+                                        aria-required="true">
+                                </div>
+                                <div class="booking-form__field">
+                                    <label for="surname" class="booking-form__label">Прізвище *</label>
+                                    <input type="text" id="surname" name="surname" required class="booking-form__input" aria-label="Surname"
+                                           aria-required="true">
+                                </div>                                
                             </div>
+                    
                             <div class="booking-form__field">
-                                <label for="email" class="booking-form__label">Email *</label>
-                                <input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                                    class="booking-form__input" title="Будь ласка, введіть адресу електронної пошти у форматі">
+                                <label for="phone" class="booking-form__label">Телефон</label>
+                                <input type="tel" id="phone" name="phone" class="booking-form__input" aria-required="true"
+                                    aria-label="Phone Number">
                             </div>
-                        </div>
+                            
+                            
+                            <div class="booking-form__field">
+                                <label for="message" class="booking-form__label">Опишіть свою проблему або побажання до виконання</label>
+                                <textarea id="message" name="message" class="booking-form__textarea"></textarea>
+                            </div>
+                        </fieldset>
+                        
+                        <fieldset class="booking-form__fieldset">
+                            <legend id="car-details-heading" class="booking-form__title">Дані про ваш автомобіль</legend>
+                            <div class="booking-form__group booking-form__group--inline">
+                                <div class="booking-form__field">
+                                    <label for="car-make" class="booking-form__label">Марка *</label>
+                                    <select id="car-make" name="car_make" class="booking-form__input" required aria-required="true"
+                                        aria-describedby="car-make-description">
+                                        <option value="">Оберіть марку</option>
+                                        <option value="Audi">Audi</option>
+                                        <option value="Bmw">BMW</option>
+                                        <option value="Mercedes">Mercedes</option>
+                                        <option value="Volkswagen">Volkswagen</option>
+                                        <option value="Toyota">Toyota</option>
+                                        <option value="Ford">Ford</option>
+                                        <option value="Honda">Honda</option>
+                                        <option value="Chevrolet">Chevrolet</option>
+                                        <option value="Tesla">Tesla</option>
+                                        <option value="Nissan">Nissan</option>
+                                        <option value="Subaru">Subaru</option>
+                                        <option value="Mazda">Mazda</option>
+                                        <option value="Hyundai">Hyundai</option>
+                                        <option value="Kia">Kia</option>
+                                    </select>
 
-                        <div class="booking-form__field">
-                            <label for="phone" class="booking-form__label">Телефон</label>
-                            <input type="tel" id="phone" name="phone" class="booking-form__input">
-                        </div>
-                        <div class="booking-form__field">
-                            <label for="message" class="booking-form__label">Ваше повідомлення</label>
-                            <textarea id="message" name="message" class="booking-form__textarea"></textarea>
-                        </div>
-                        <div class="booking-form__field">
-                            <input type="submit" class="btn btn--lg" value="Записатися">
-                        </div>
+
+                                <div class="booking-form__field">
+                                    <label for="car-model" class="booking-form__label">Модель *</label>
+                                    <input type="text" id="car-model" name="car_model" class="booking-form__input" required
+                                        aria-required="true" aria-describedby="car-model-description" pattern="[A-Za-zА-Яа-яіїєґ0-9\s]+"
+                                        title="Будь ласка, введіть модель вашого автомобіля">
+
+                                </div>
+                                
+                                <div class="booking-form__field">
+                                    <label for="car-year" class="booking-form__label">Рік випуску *</label>
+                                    <input type="number" id="car-year" name="car_year" class="booking-form__input" required
+                                        aria-required="true" aria-describedby="car-year-description" min="1900" max="2024">
+                                </div>
+                            </div>
+                        </fieldset>
+                    
+                        <fieldset class="booking-form__fieldset">
+                            <legend id="visit-details-heading" class="booking-form__title">Про відвідування</legend>
+                            <div class="booking-form__group">
+                                <div class="booking-form__field">
+                                    <p class="booking-form__label" id="visited-label">Вже були у нас? *</p>
+                                    <fieldset class="booking-form_radio-group">
+                                        <div class="radio-group">
+                                            <input type="radio" id="visited-yes" name="visited" value="yes" required
+                                                aria-describedby="visited-description">
+                                            <label for="visited-yes">Так</label>
+                                        </div>
+                                        <div class="radio-group">
+                                            <input type="radio" id="visited-no" name="visited" value="no" required
+                                                aria-describedby="visited-description">
+                                            <label for="visited-no">Ні</label>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                                <div class="booking-form__field">
+                                    <label for="visit-date" class="booking-form__label">Бажаний день відвідування *</label>
+                                    <input type="date" id="visit-date" name="visit_date" class="booking-form__input" required
+                                        aria-required="true" aria-describedby="visit-date-description" min="<?php echo date('Y-m-d'); ?>">
+                                </div>
+                            </div>
+                        </fieldset>
+                    
+                        <button type="submit" id="submitBtn" class="btn btn--lg">Записатися</button>
                     </form>
                 </div>
             </section>
@@ -157,4 +230,7 @@
     </div>
 </body>
 
+    
+<script src="js/validate.js"></script>
+<script src="js/booking.js"></script>
 </html>
