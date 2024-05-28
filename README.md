@@ -55,13 +55,22 @@ The website is an integral part of this system, created to provide customers wit
     ```
 ## Project structure
 
+
 - **index.html**: The main entry point of the website.
-- **public/**: Contains static resources such as images, CSS and JavaScript files.
-- **src/**: Contains the main source code of the website.
-       - **components/**: reusable components used on the website.
-       - **pages/**: different pages of the website.
-       - **services/**: modules for various services provided by the website.
-       - **utils/**: utility functions used in the project.
+- **about.html**: The page with information about the car service.
+- **booking.html**: The page for booking services.
+- **services.html**: The page displaying available services.
+- **package.json**: Configuration file for Node.js project, including dependencies.
+- **package-lock.json**: Automatically generated file that records the exact versions of installed dependencies.
+- **.vscode/**: Directory for Visual Studio Code settings.
+  - **settings.json**: Configuration settings for Visual Studio Code.
+- **assets/**: Contains static resources such as images and CSS files.
+  - **images/**: Directory for image files used on the website.
+  - **styles/**: Directory for CSS files used for styling the website.
+- **js/**: Directory for JavaScript files.
+  - **main.js**: Main JavaScript file for the website's functionality.
+- **node_modules/**: Directory where npm installs the project dependencies.
+
 
 ## Functionality
 
