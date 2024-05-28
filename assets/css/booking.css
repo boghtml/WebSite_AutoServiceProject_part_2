@@ -66,14 +66,27 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
+<<<<<<< HEAD
+=======
+}
+
+.booking-form__field {
+    margin-bottom: 1.5rem;
+>>>>>>> c71131563a23cc501528f963459c9faf0ef4e9b4
 }
 
 .booking-form__label {
     font-size: 1rem;
     font-weight: 500;
+<<<<<<< HEAD
     display: block;
     color: var(--form-label-color);
     padding: 18px 4px 8px;
+=======
+    margin-bottom: 0.5rem;
+    display: block;
+    color: var(--form-label-color);
+>>>>>>> c71131563a23cc501528f963459c9faf0ef4e9b4
 }
 
 .booking-form__input,

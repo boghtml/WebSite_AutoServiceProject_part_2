@@ -85,8 +85,12 @@
 
             <section class="booking__container" aria-labelledby="client-data-heading">
                 <div class="booking-form__container">
+<<<<<<< HEAD
 
                     <form method="post" class="booking-form">
+=======
+                    <form action="path_to_your_server_script" method="post" class="booking-form">
+>>>>>>> c71131563a23cc501528f963459c9faf0ef4e9b4
                     
                         <fieldset class="booking-form__fieldset">
                             <legend id="contact-info-heading" class="booking-form__title">Контактна інформація</legend>
@@ -97,13 +101,28 @@
                                         aria-required="true">
                                 </div>
                                 <div class="booking-form__field">
+<<<<<<< HEAD
                                     <label for="surname" class="booking-form__label">Прізвище *</label>
                                     <input type="text" id="surname" name="surname" required class="booking-form__input" aria-label="Surname"
                                            aria-required="true">
                                 </div>                                
+=======
+                                    <label for="email" class="booking-form__label">Email *</label>
+                                    <input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                                        class="booking-form__input" aria-label="Email for Receipt" aria-required="true"
+                                        aria-describedby="email-description" title="Будь ласка, введіть адресу електронної пошти у форматі">
+                                </div>
                             </div>
                     
                             <div class="booking-form__field">
+                                <label for="phone" class="booking-form__label">Телефон</label>
+                                <input type="tel" id="phone" name="phone" class="booking-form__input" aria-required="true"
+                                    aria-label="Phone Number">
+>>>>>>> c71131563a23cc501528f963459c9faf0ef4e9b4
+                            </div>
+                    
+                            <div class="booking-form__field">
+<<<<<<< HEAD
                                 <label for="phone" class="booking-form__label">Телефон</label>
                                 <input type="tel" id="phone" name="phone" class="booking-form__input" aria-required="true"
                                     aria-label="Phone Number">
@@ -116,6 +135,13 @@
                             </div>
                         </fieldset>
                         
+=======
+                                <label for="message" class="booking-form__label">Ваше повідомлення</label>
+                                <textarea id="message" name="message" class="booking-form__textarea"></textarea>
+                            </div>
+                        </fieldset>
+                    
+>>>>>>> c71131563a23cc501528f963459c9faf0ef4e9b4
                         <fieldset class="booking-form__fieldset">
                             <legend id="car-details-heading" class="booking-form__title">Дані про ваш автомобіль</legend>
                             <div class="booking-form__group booking-form__group--inline">
@@ -124,6 +150,7 @@
                                     <select id="car-make" name="car_make" class="booking-form__input" required aria-required="true"
                                         aria-describedby="car-make-description">
                                         <option value="">Оберіть марку</option>
+<<<<<<< HEAD
                                         <option value="Audi">Audi</option>
                                         <option value="Bmw">BMW</option>
                                         <option value="Mercedes">Mercedes</option>
@@ -149,6 +176,24 @@
 
                                 </div>
                                 
+=======
+                                        <option value="audi">Audi</option>
+                                        <option value="bmw">BMW</option>
+                                        <option value="mercedes">Mercedes</option>
+                                        <option value="volkswagen">Volkswagen</option>
+                                        <option value="toyota">Toyota</option>
+                                        <option value="ford">Ford</option>
+                                        <option value="honda">Honda</option>
+                                        <option value="chevrolet">Chevrolet</option>
+                                    </select>
+                                </div>
+                                <div class="booking-form__field">
+                                    <label for="car-model" class="booking-form__label">Модель *</label>
+                                    <input type="text" id="car-model" name="car_model" class="booking-form__input" required
+                                        aria-required="true" aria-describedby="car-model-description" pattern="[A-Za-zА-Яа-яіїєґ\s]+"
+                                        title="Будь ласка, введіть модель вашого автомобіля">
+                                </div>
+>>>>>>> c71131563a23cc501528f963459c9faf0ef4e9b4
                                 <div class="booking-form__field">
                                     <label for="car-year" class="booking-form__label">Рік випуску *</label>
                                     <input type="number" id="car-year" name="car_year" class="booking-form__input" required
