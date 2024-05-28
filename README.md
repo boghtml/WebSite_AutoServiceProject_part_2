@@ -64,21 +64,26 @@ The website is an integral part of this system, created to provide customers wit
        - **services/**: modules for various services provided by the website.
        - **utils/**: utility functions used in the project.
 
-## Screenshots
+## Functionality
+
+To view the functionality of the website, open the file: **"Explanation_to_my_work (courses-project).docx"** and go to page **52** and read to **56**
+
+## But here are some screenshots of the functionality of the website:
 
 ### Homepage
-![Home Page](path_to_screenshot_home)
+![image](https://github.com/boghtml/WebSite_AutoServiceProject_part_2/assets/119760440/cfb9b6f2-47fd-4d16-a12f-9bb42449c2a2)
 
 ### Reservation of services
-![Service booking](path_to_screenshot_booking)
+![image](https://github.com/boghtml/WebSite_AutoServiceProject_part_2/assets/119760440/c8a61efa-a409-4685-9c81-e8cc5f6a33cb)
+![image](https://github.com/boghtml/WebSite_AutoServiceProject_part_2/assets/119760440/34ae890f-d86b-4e54-9ee1-0cdb82a3f9b8)
+![image](https://github.com/boghtml/WebSite_AutoServiceProject_part_2/assets/119760440/94c6e9a4-3921-425f-90fc-537072711a1e)
 
 ### Service details
-![Service Details](path_to_screenshot_details)
+![image](https://github.com/boghtml/WebSite_AutoServiceProject_part_2/assets/119760440/0243a64a-0c0d-491f-80f4-e374a88a381d)
 
 ### Contact Information
-![Contact Information](path_to_screenshot_contact)
-
-*Replace `path_to_screenshot_home`, `path_to_screenshot_booking`, etc. with the actual paths to your screenshots.*
+![image](https://github.com/boghtml/WebSite_AutoServiceProject_part_2/assets/119760440/e67758d6-ebb8-4a5c-875a-c809de0e9252)
+![image](https://github.com/boghtml/WebSite_AutoServiceProject_part_2/assets/119760440/4c9b72fc-52da-4566-a881-dbba6f9a46f9)
 
 ## Advantages
 
