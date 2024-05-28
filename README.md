@@ -33,27 +33,26 @@ The website is an integral part of this system, created to provide customers wit
 ## Installation
 
 1. Clone the repository:
-       ```bash
-       git clone https://github.com/boghtml/WebSite_AutoServiceProject_part_2.git
-       ```
+    ```bash
+    git clone https://github.com/boghtml/WebSite_AutoServiceProject_part_2.git
+    ```
 
-2. Go to the project directory:
-       ```bash
-       cd WebSite_AutoServiceProject_part_2
-       ```
+2. Navigate to the project directory:
+    ```bash
+    cd WebSite_AutoServiceProject_part_2
+    ```
 
-3. Install the necessary dependencies:
-       ```bash
-       install npm
-       ```
+3. Install the required dependencies:
+    ```bash
+    npm install
+    ```
 
-4. Configure environment variables for the website, such as the database connection string.
+4. Set up the environment variables for the website, such as the database connection string.
 
 5. Run the website locally:
-       ```bash
-       npm start
-       ```
-
+    ```bash
+    npm start
+    ```
 ## Project structure
 
 - **index.html**: The main entry point of the website.
