@@ -78,8 +78,6 @@ To view the functionality of the website, open the file: **"Explanation_to_my_wo
 
 ![image](https://github.com/boghtml/WebSite_AutoServiceProject_part_2/assets/119760440/c8a61efa-a409-4685-9c81-e8cc5f6a33cb)
 
-![image](https://github.com/boghtml/WebSite_AutoServiceProject_part_2/assets/119760440/34ae890f-d86b-4e54-9ee1-0cdb82a3f9b8)
-
 ![image](https://github.com/boghtml/WebSite_AutoServiceProject_part_2/assets/119760440/94c6e9a4-3921-425f-90fc-537072711a1e)
 
 ### Service details
