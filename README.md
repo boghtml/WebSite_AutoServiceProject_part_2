@@ -1,3 +1,7 @@
+## Functionality
+
+To view the functionality of the website, open the file: **"Explanation_to_my_work (courses-project).docx"** and go to page **52** and read to **56**
+
 # Site for AutoService
 
 ## Introduction
@@ -70,11 +74,6 @@ The website is an integral part of this system, created to provide customers wit
 - **js/**: Directory for JavaScript files.
   - **main.js**: Main JavaScript file for the website's functionality.
 - **node_modules/**: Directory where npm installs the project dependencies.
-
-
-## Functionality
-
-To view the functionality of the website, open the file: **"Explanation_to_my_work (courses-project).docx"** and go to page **52** and read to **56**
 
 ## But here are some screenshots of the functionality of the website:
 
